@@ -1,0 +1,170 @@
+.admin-dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fb;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.admin-header {
+  height: 72px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.25rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.admin-header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: #facc15;
+  color: #111827;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.ikea-logo {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #facc15;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #dbeafe;
+  margin-top: 0.1rem;
+}
+
+.ikea-logout-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 0.65rem 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.ikea-logout-btn:hover {
+  background: #facc15;
+  color: #111827;
+}
+
+.admin-body {
+  display: flex;
+  flex: 1;
+  min-height: calc(100vh - 72px);
+}
+
+.admin-sidebar {
+  width: 270px;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 1.5rem 1rem;
+  box-shadow: 8px 0 24px rgba(15, 23, 42, 0.04);
+}
+
+.sidebar-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 1rem 0.75rem;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar li {
+  padding: 0.95rem 1rem;
+  cursor: pointer;
+  border-radius: 14px;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.admin-sidebar li:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+  transform: translateX(4px);
+}
+
+.admin-sidebar li.active {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.sidebar-item-title {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.sidebar-item-desc {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.admin-sidebar li.active .sidebar-item-desc {
+  color: #dbeafe;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 2rem;
+  background: #f5f7fb;
+  overflow-y: auto;
+}
+
+.admin-page-heading {
+  margin-bottom: 1.5rem;
+}
+
+.admin-page-heading h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #111827;
+  letter-spacing: -0.04em;
+}
+
+.admin-page-heading p {
+  margin: 0.35rem 0 0;
+  color: #6b7280;
+}
+
+.admin-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.07);
+}

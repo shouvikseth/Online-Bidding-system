@@ -1,0 +1,276 @@
+.product-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Center all content horizontally */
+}
+
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0058a3;
+}
+
+.success-toast {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Center form fields */
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-field input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.preview-container {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.preview-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0058a3;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', sans-serif;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #004080;
+}
+.sell-product-page {
+  width: 100%;
+}
+
+.sell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sell-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 2.2rem;
+  letter-spacing: -0.05em;
+}
+
+.sell-header p {
+  margin: 0.4rem 0 0;
+  color: #6b7280;
+  max-width: 720px;
+}
+
+.sell-header-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  border-radius: 18px;
+  padding: 1rem;
+  font-weight: 900;
+}
+
+.sell-success-toast {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 16px;
+  padding: 1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.sell-form-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111827;
+  font-weight: 900;
+  margin: 0 0 1rem;
+}
+
+.form-section-title:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.modern-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.modern-form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-weight: 800;
+}
+
+.modern-form-field input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.modern-form-field input:focus {
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-box label {
+  border: 2px dashed #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 20px;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-box label strong {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.upload-box label span {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.preview-card {
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.preview-card p {
+  margin: 0.25rem 0 0;
+  color: #6b7280;
+}
+
+.preview-card img {
+  width: 140px;
+  height: 120px;
+  object-fit: contain;
+  background: #f9fafb;
+  border-radius: 16px;
+}
+
+.modern-submit-auction-btn {
+  margin-top: 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 14px 26px rgba(37, 99, 235, 0.25);
+}
+
+.modern-submit-auction-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(37, 99, 235, 0.32);
+}
+
+@media (max-width: 800px) {
+  .sell-header {
+    flex-direction: column;
+  }
+
+  .modern-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
