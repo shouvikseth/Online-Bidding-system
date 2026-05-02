@@ -1,6 +1,6 @@
-# JustBidIt – Online Auction System
+# BidMe– Online Auction System
 
-Welcome to **JustBidIt**! This guide will help you get the project up and running on your local machine.
+Welcome to **BidMe**! This guide will help you get the project up and running on your local machine.
 
 ---
 
@@ -110,7 +110,7 @@ The frontend will run on: [http://localhost:3000](http://localhost:3000)
 ## Project Structure
 
 ```
-JustBidIt/
+BidMe/
 ├── server/
 │   ├── server.py          # Main Flask app
 │   ├── auth.py            # Authentication routes
